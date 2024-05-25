@@ -70,8 +70,8 @@ importers:
         specifier: ^2.1.0
         version: 2.1.0
       '@argos-ci/playwright':
-        specifier: ^3.0.2
-        version: 3.0.2
+        specifier: ^3.0.3
+        version: 3.0.3
       '@docusaurus/module-type-aliases':
         specifier: ^3.3.2
         version: 3.3.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -226,8 +226,8 @@ packages:
     resolution: {integrity: sha512-lFMjJTrFL3j7L9yBxwYfCq2k6qqwHyzuUl/XBnif78PWTJYyL/dfowQHWE3sp6U6ZzqWiiIZnpTMO96zhkjwtg==}
     engines: {node: '>=6.0.0'}
 
-  '@argos-ci/browser@2.1.0':
-    resolution: {integrity: sha512-pOWyyp39g1Jhags7Z7Qb+rgNjUtvMxh21lgF1Ts9epobE2ZQLkRxlUheSDlC6VbvauhO+8WS3mo3Q8dgEn7UtA==}
+  '@argos-ci/browser@2.1.1':
+    resolution: {integrity: sha512-cG7NlM4NFqyCKeDujAwAiao5+fjt0ZI9dN0WMXBMNEoKeGCYMapjaEQpEUzH8XTfI79DYuHl1zsuCyvH2/UYKA==}
     engines: {node: '>=18.0.0'}
 
   '@argos-ci/cli@2.1.0':
@@ -239,8 +239,8 @@ packages:
     resolution: {integrity: sha512-T5W37CZ6HZjRcVAXuPj0wUB/Fm4VdwLvKpQL9yqSwiJganeNz7u8AFYJ30ujSUJS1jdUViW5TNnmsgDjuvGyTQ==}
     engines: {node: '>=18.0.0'}
 
-  '@argos-ci/playwright@3.0.2':
-    resolution: {integrity: sha512-fvrocGEVC6S3IatprSBmikzDKJcHH4i7ekHSG9xU5fXQHaIFoQJDti/sCCJ7QbKY2w30Ry9yaEALnsPVprD80w==}
+  '@argos-ci/playwright@3.0.3':
+    resolution: {integrity: sha512-InHCRA4yf6Q03iCFs26b2ypn1mWSMVwBSOwZPMMsGLrwEL0XqssPJT6Q/23DQUjIxoXMz0gaoisYFpD1DfFlZg==}
     engines: {node: '>=18.0.0'}
 
   '@argos-ci/util@2.0.0':
@@ -3507,6 +3507,7 @@ packages:
 
   inflight@1.0.6:
     resolution: {integrity: sha512-k92I/b08q4wvFscXCLvqfsHCrjrF7yiXsQuIVvVE7N82W3+aqpzuUdBbfhWcy/FZR3/4IgflMgKLOsvPDrGCJA==}
+    deprecated: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
 
   inherits@2.0.3:
     resolution: {integrity: sha512-x00IRNXNy63jwGkJmzPigoySHbaqpNuzKbBOmzK+g2OdZpQ9w+sxCN+VSB3ja7IAge2OP2qpfxTjeNcyjmW1uw==}
@@ -6224,7 +6225,7 @@ snapshots:
       '@jridgewell/gen-mapping': 0.3.3
       '@jridgewell/trace-mapping': 0.3.20
 
-  '@argos-ci/browser@2.1.0': {}
+  '@argos-ci/browser@2.1.1': {}
 
   '@argos-ci/cli@2.1.0':
     dependencies:
@@ -6247,9 +6248,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@argos-ci/playwright@3.0.2':
+  '@argos-ci/playwright@3.0.3':
     dependencies:
-      '@argos-ci/browser': 2.1.0
+      '@argos-ci/browser': 2.1.1
       '@argos-ci/core': 2.2.0
       '@argos-ci/util': 2.0.0
       chalk: 5.3.0
